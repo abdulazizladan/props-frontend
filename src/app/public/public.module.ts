@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -12,6 +13,7 @@ import { PublicRoutingModule } from './public-routing.module';
 import { PropertiesListComponent } from './components/properties-list/properties-list.component';
 import { PropertyComponent } from './components/property/property.component';
 import { PropertyCardComponent } from './components/property-card/property-card.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { PropertyCardComponent } from './components/property-card/property-card.
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     FlexLayoutModule,
     MatToolbarModule,
     MatIconModule,
